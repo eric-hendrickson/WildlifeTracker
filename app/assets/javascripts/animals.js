@@ -32,7 +32,7 @@ $(document).ready(function() {
 
 // Function that displays object on webpage
 function add_to_animal_list(data) {
-  $("#animal_list").append(
+  $("#animals_list").append(
     '<tr>' +
     // Animal common name
     '<td>' + data.common_name + '</td>' +
