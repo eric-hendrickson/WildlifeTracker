@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :sightings
+  resources :sightings do
+    get :get_events, on: :collection
+  end
   resources :animals
   root 'landings#index'
 

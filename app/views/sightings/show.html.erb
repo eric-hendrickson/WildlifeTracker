@@ -1,6 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Animal Name:</strong>
+  <% animal = Animal.find(@sighting.animal_id) %>
+  <%= animal.common_name %>
+</p>
+
+<p>
   <strong>Date:</strong>
   <%= @sighting.date %>
 </p>
